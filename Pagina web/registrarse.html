@@ -33,25 +33,44 @@
     <hr>
 
     <label for="email"><b>Correo electronico</b></label>
-    <input type="text" placeholder="Escriba el correo" name="requiere correo" required>
+    <input type="email" placeholder="Escriba el correo" name="requiere correo" required>
 
     <label for="psw"><b>Contraseña</b></label>
-    <input type="password" placeholder="Escriba la contraseña" name="requiere contraseña" required>
+    <input type="password" id="password "placeholder="Escriba la contraseña" name="requiere contraseña" minlength="6" maxlength="22" required>
 
     <label for="psw-repeat"><b>Repita Contraseña</b></label>
-    <input type="password" placeholder="Repita la contraseña" name="repita la contraseña" required>
-    
+    <input type="password" id="confirm_password" placeholder="Repita la contraseña" name="repita la contraseña" required>
 	  
-	<label for="psw-repeat"><b>Clase de usuario: </b></label> 
-	<select>
-  <option value="volvo">Doctor</option>
-  <option value="saab">Paciente</option>
-  <option value="opel">Familiar/cuidador</option>
+	<label for="especialidad"><b>Clase de usuario: </b></label> 
+	<select id="espe">
+  <option value="doctor">Doctor</option>
+  <option value="paciente">Paciente</option>
+  <option value="familia">Familiar/cuidador</option>
 </select>
 	  <hr>
 
     <p>Al crear una cuenta usted acepta nuestros <a href="#">Terminos y condiciones</a>.</p>
-    <button type="submit" class="registerbtn">Siguiente</button>
+    <button type="submit" class="registerbtn" onClick="redirigir()">Siguiente</button>
+	 <script>
+		 
+	 var select = document.querySelector('select');
+     var para = document.querySelector('p');
+		 
+	
+		 
+	 function redirigir(){
+		 var choice = select.value;
+		 if(choice==="doctor"){
+			 window.location.href="doctor.html"
+		 }
+		 else if(choice==="paciente"){
+			 window.location.href="paciente.html"
+		 }
+		 else{
+			 window.location.href="encargado.html"
+		 }
+	 }
+	 </script> 
 	<p>¿Ya tiene una cuenta?<a href="login.html">Inicie sesión</a>.</p>
   </div>
   
