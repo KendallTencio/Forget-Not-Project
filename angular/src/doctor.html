@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="css/singlePageTemplateLog.css" rel="stylesheet" type="text/css">
+<link href="combobox.js" rel="stylesheet">
+</head>
+<body>
+	<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">ABOSolutions</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="menu principal.html">Principal</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+	  <h3><span class="light"><h1><div class="centered">Doctor</div></h1></h3>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+  <div class="containerL">
+    <p>Por favor, introduce tus datos para el registro</p>
+    <hr>
+
+    <label for="Nombre"><b>Nombre:</b></label>
+    <input type="text" placeholder="Nombre" name="requiere nombre" required>
+
+    <label for="apellido"><b>Apellidos:</b></label>
+    <input type="text" placeholder="Apellidos" name="requiere apellidos" required>
+	  
+	<label for="hospital"><b>Hospital:</b></label>
+    <input type="text" placeholder="Hospital" name="requiere nombre de hospital" required>
+
+    <label for="Carne"><b>Carné Médico(solo los números):</b></label>
+    <input type="number" min="10000" max="99999" placeholder="MED-" name="Escriba el número" required>
+	  
+	<label for="cedula"><b>Cédula(sin guiones):</b></label>
+    <input type="number" min="10000" max="99999" placeholder="Cédula" name="Escriba el número" required>
+    
+	 <label for="celular"><b>Número de celular:</b></label>
+    <input type="celular" min="10000000" max="99999999" placeholder="Telefono" name="Escriba el número" required>
+	  
+	<label for="psw-repeat"><b>Tipo de especialista:</b></label> 
+	<select>
+  <option value="volvo">Terapeuta</option>
+  <option value="saab">Nutricionista</option>
+  <option value="opel">Psicólogo</option>
+		<option value="opel">Geriatra</option>
+		<option value="opel">Cardiologo</option>
+		<option value="opel">Medicina física</option>
+</select>
+	  <hr>
+
+    <p>Al crear una cuenta usted acepta nuestros <a href="#">Terminos y condiciones</a>.</p>
+    <button type="submit" class="registerbtn">Siguiente</button>
+	<p>¿Ya tiene una cuenta?<a href="login.html">Inicie sesión</a>.</p>
+  </div>
+  
+  </section>
+	    
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2019 - <strong>Alfa Beta Omega Solutions</strong></div>
+</div>
+</body>
+</html>
+
